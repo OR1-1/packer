@@ -1,0 +1,11 @@
+<!-- <h1>Hello, Rails!</h1> -->
+<h1>Welcome Packer!</h1>
+
+
+<%= form_for :packers, url: packers_path do |f| %>
+  <p>
+    <%= f.label :hostname %>:
+    <%= f.text_field :hostname %>
+    <%= f.submit "Build" %>
+  </p>
+<% end %>
