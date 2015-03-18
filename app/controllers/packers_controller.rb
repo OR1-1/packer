@@ -1,6 +1,13 @@
 class PackersController < ApplicationController
   def create
-    system('packer build "C:\\website\\test_null.json"')
+    # C:\opscode\chef-repo
+    Dir.chdir('C:\\opscode\\chef-repo'){
+      system('knife client create another_client -d')
+    }
+
+    # system('knife client create another_client -d')
+
+    # system('packer build "C:\\website\\test_null.json"')
   end
 
   def index
