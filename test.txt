@@ -1,1 +1,1 @@
-test 6
+test 6 release 1.0 fix
